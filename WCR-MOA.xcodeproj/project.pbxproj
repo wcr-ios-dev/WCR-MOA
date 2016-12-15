@@ -13,6 +13,11 @@
 		E01189FD1E00F19700C9E3ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E01189FB1E00F19700C9E3ED /* Main.storyboard */; };
 		E01189FF1E00F19700C9E3ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E01189FE1E00F19700C9E3ED /* Assets.xcassets */; };
 		E0118A021E00F19700C9E3ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0118A001E00F19700C9E3ED /* LaunchScreen.storyboard */; };
+		E0ACC01C1E012DDF005FD9B2 /* LoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC01B1E012DDF005FD9B2 /* LoginVC.m */; };
+		E0ACC0311E0139E1005FD9B2 /* BaseNav.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC0301E0139E1005FD9B2 /* BaseNav.m */; };
+		E0ACC0391E0142F0005FD9B2 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC0381E0142F0005FD9B2 /* HomeVC.m */; };
+		E0ACC03C1E01470B005FD9B2 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC03B1E01470B005FD9B2 /* LoginModel.m */; };
+		E0ACC03F1E014722005FD9B2 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC03E1E014722005FD9B2 /* LoginView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,16 @@
 		E01189FE1E00F19700C9E3ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0118A011E00F19700C9E3ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0118A031E00F19700C9E3ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0ACC01A1E012DDF005FD9B2 /* LoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVC.h; sourceTree = "<group>"; };
+		E0ACC01B1E012DDF005FD9B2 /* LoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVC.m; sourceTree = "<group>"; };
+		E0ACC02F1E0139E1005FD9B2 /* BaseNav.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNav.h; sourceTree = "<group>"; };
+		E0ACC0301E0139E1005FD9B2 /* BaseNav.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNav.m; sourceTree = "<group>"; };
+		E0ACC0371E0142F0005FD9B2 /* HomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVC.h; sourceTree = "<group>"; };
+		E0ACC0381E0142F0005FD9B2 /* HomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVC.m; sourceTree = "<group>"; };
+		E0ACC03A1E01470B005FD9B2 /* LoginModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginModel.h; sourceTree = "<group>"; };
+		E0ACC03B1E01470B005FD9B2 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
+		E0ACC03D1E014722005FD9B2 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		E0ACC03E1E014722005FD9B2 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +73,9 @@
 		E01189F11E00F19700C9E3ED /* WCR-MOA */ = {
 			isa = PBXGroup;
 			children = (
+				E0ACC01D1E012E7C005FD9B2 /* Base */,
+				E0ACC0321E0142B5005FD9B2 /* Home */,
+				E0ACC0151E012D29005FD9B2 /* Login */,
 				E01189F51E00F19700C9E3ED /* AppDelegate.h */,
 				E01189F61E00F19700C9E3ED /* AppDelegate.m */,
 				E01189F81E00F19700C9E3ED /* ViewController.h */,
@@ -77,6 +95,136 @@
 				E01189F31E00F19700C9E3ED /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0ACC0151E012D29005FD9B2 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC0191E012D74005FD9B2 /* PaserXml */,
+				E0ACC0161E012D29005FD9B2 /* Controller */,
+				E0ACC0171E012D29005FD9B2 /* Model */,
+				E0ACC0181E012D29005FD9B2 /* View */,
+			);
+			name = Login;
+			path = Class/Login;
+			sourceTree = "<group>";
+		};
+		E0ACC0161E012D29005FD9B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC01A1E012DDF005FD9B2 /* LoginVC.h */,
+				E0ACC01B1E012DDF005FD9B2 /* LoginVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0ACC0171E012D29005FD9B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC03A1E01470B005FD9B2 /* LoginModel.h */,
+				E0ACC03B1E01470B005FD9B2 /* LoginModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0ACC0181E012D29005FD9B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC03D1E014722005FD9B2 /* LoginView.h */,
+				E0ACC03E1E014722005FD9B2 /* LoginView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0ACC0191E012D74005FD9B2 /* PaserXml */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PaserXml;
+			sourceTree = "<group>";
+		};
+		E0ACC01D1E012E7C005FD9B2 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC01E1E012E7C005FD9B2 /* Controller */,
+				E0ACC0211E012E7C005FD9B2 /* Model */,
+				E0ACC0221E012E7C005FD9B2 /* PaserXml */,
+				E0ACC0231E012E7C005FD9B2 /* View */,
+			);
+			name = Base;
+			path = Class/Base;
+			sourceTree = "<group>";
+		};
+		E0ACC01E1E012E7C005FD9B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC02F1E0139E1005FD9B2 /* BaseNav.h */,
+				E0ACC0301E0139E1005FD9B2 /* BaseNav.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0ACC0211E012E7C005FD9B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0ACC0221E012E7C005FD9B2 /* PaserXml */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PaserXml;
+			sourceTree = "<group>";
+		};
+		E0ACC0231E012E7C005FD9B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E0ACC0321E0142B5005FD9B2 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC0331E0142B5005FD9B2 /* Controller */,
+				E0ACC0341E0142B5005FD9B2 /* Model */,
+				E0ACC0351E0142B5005FD9B2 /* PaserXml */,
+				E0ACC0361E0142B5005FD9B2 /* View */,
+			);
+			name = Home;
+			path = Class/Home;
+			sourceTree = "<group>";
+		};
+		E0ACC0331E0142B5005FD9B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				E0ACC0371E0142F0005FD9B2 /* HomeVC.h */,
+				E0ACC0381E0142F0005FD9B2 /* HomeVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		E0ACC0341E0142B5005FD9B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E0ACC0351E0142B5005FD9B2 /* PaserXml */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PaserXml;
+			sourceTree = "<group>";
+		};
+		E0ACC0361E0142B5005FD9B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +299,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0ACC0311E0139E1005FD9B2 /* BaseNav.m in Sources */,
 				E01189FA1E00F19700C9E3ED /* ViewController.m in Sources */,
+				E0ACC03F1E014722005FD9B2 /* LoginView.m in Sources */,
 				E01189F71E00F19700C9E3ED /* AppDelegate.m in Sources */,
+				E0ACC0391E0142F0005FD9B2 /* HomeVC.m in Sources */,
+				E0ACC01C1E012DDF005FD9B2 /* LoginVC.m in Sources */,
 				E01189F41E00F19700C9E3ED /* main.m in Sources */,
+				E0ACC03C1E01470B005FD9B2 /* LoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +426,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UGN63MY6MM;
 				INFOPLIST_FILE = "WCR-MOA/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wcr.WCR-MOA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -285,6 +439,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UGN63MY6MM;
 				INFOPLIST_FILE = "WCR-MOA/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.wcr.WCR-MOA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -310,6 +465,7 @@
 				E0118A081E00F19700C9E3ED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

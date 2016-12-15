@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "BaseNav.h"
+#import "LoginVC.h"
+#import "HomeVC.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    LoginVC * loginVc = [[LoginVC alloc] init];
+    HomeVC * homeVc = [[HomeVC alloc] init];
+    BaseNav *baseNav = [[BaseNav alloc] initWithRootViewController:homeVc];
+    self.window.rootViewController = loginVc;
     return YES;
 }
 
