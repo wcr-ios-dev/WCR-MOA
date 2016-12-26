@@ -8,6 +8,7 @@
 
 #import "LoginVC.h"
 #import "LoginView.h"
+#import "LoginModel.h"
 
 @interface LoginVC ()
 
@@ -18,16 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    CGRect rect = [[UIScreen mainScreen] bounds];
     
-    CGSize size = rect.size;
+    //登陆的View
+    LoginView * loginView = [[LoginView alloc] initWithFrame:CGRectMake(0, 0, MainScreenWidth, MainScreenHeight)];
+    LoginModel * model = [[LoginModel alloc] init];
+    loginView.model = model;
     
-    CGFloat width = size.width;
-    
-    CGFloat height = size.height;
-    
-    LoginView * loginView = [[LoginView alloc] initWithFrame:CGRectMake(0, 0, width, height)];
     [self.view addSubview:loginView];
+    
 }
 
 - (void)didReceiveMemoryWarning {

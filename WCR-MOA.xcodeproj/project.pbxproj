@@ -18,6 +18,8 @@
 		E0ACC0391E0142F0005FD9B2 /* HomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC0381E0142F0005FD9B2 /* HomeVC.m */; };
 		E0ACC03C1E01470B005FD9B2 /* LoginModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC03B1E01470B005FD9B2 /* LoginModel.m */; };
 		E0ACC03F1E014722005FD9B2 /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0ACC03E1E014722005FD9B2 /* LoginView.m */; };
+		E0E44F691E10B5500028763D /* UITableView+SDAutoTableViewCellHeight.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E44F661E10B5500028763D /* UITableView+SDAutoTableViewCellHeight.m */; };
+		E0E44F6A1E10B5500028763D /* UIView+SDAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E44F681E10B5500028763D /* UIView+SDAutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,12 @@
 		E0ACC03B1E01470B005FD9B2 /* LoginModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginModel.m; sourceTree = "<group>"; };
 		E0ACC03D1E014722005FD9B2 /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		E0ACC03E1E014722005FD9B2 /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		E0E44F641E10B5500028763D /* SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAutoLayout.h; sourceTree = "<group>"; };
+		E0E44F651E10B5500028763D /* UITableView+SDAutoTableViewCellHeight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SDAutoTableViewCellHeight.h"; sourceTree = "<group>"; };
+		E0E44F661E10B5500028763D /* UITableView+SDAutoTableViewCellHeight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SDAutoTableViewCellHeight.m"; sourceTree = "<group>"; };
+		E0E44F671E10B5500028763D /* UIView+SDAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDAutoLayout.h"; sourceTree = "<group>"; };
+		E0E44F681E10B5500028763D /* UIView+SDAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDAutoLayout.m"; sourceTree = "<group>"; };
+		E0E44F6C1E10CB120028763D /* WCRPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WCRPrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 				E0ACC01D1E012E7C005FD9B2 /* Base */,
 				E0ACC0321E0142B5005FD9B2 /* Home */,
 				E0ACC0151E012D29005FD9B2 /* Login */,
+				E0E44F631E10B5500028763D /* SDAutoLayout */,
 				E01189F51E00F19700C9E3ED /* AppDelegate.h */,
 				E01189F61E00F19700C9E3ED /* AppDelegate.m */,
 				E01189F81E00F19700C9E3ED /* ViewController.h */,
@@ -85,6 +94,7 @@
 				E0118A001E00F19700C9E3ED /* LaunchScreen.storyboard */,
 				E0118A031E00F19700C9E3ED /* Info.plist */,
 				E01189F21E00F19700C9E3ED /* Supporting Files */,
+				E0E44F6C1E10CB120028763D /* WCRPrefixHeader.pch */,
 			);
 			path = "WCR-MOA";
 			sourceTree = "<group>";
@@ -227,6 +237,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		E0E44F631E10B5500028763D /* SDAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				E0E44F641E10B5500028763D /* SDAutoLayout.h */,
+				E0E44F651E10B5500028763D /* UITableView+SDAutoTableViewCellHeight.h */,
+				E0E44F661E10B5500028763D /* UITableView+SDAutoTableViewCellHeight.m */,
+				E0E44F671E10B5500028763D /* UIView+SDAutoLayout.h */,
+				E0E44F681E10B5500028763D /* UIView+SDAutoLayout.m */,
+			);
+			name = SDAutoLayout;
+			path = Class/otherLib/SDAutoLayout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -303,9 +326,11 @@
 				E01189FA1E00F19700C9E3ED /* ViewController.m in Sources */,
 				E0ACC03F1E014722005FD9B2 /* LoginView.m in Sources */,
 				E01189F71E00F19700C9E3ED /* AppDelegate.m in Sources */,
+				E0E44F6A1E10B5500028763D /* UIView+SDAutoLayout.m in Sources */,
 				E0ACC0391E0142F0005FD9B2 /* HomeVC.m in Sources */,
 				E0ACC01C1E012DDF005FD9B2 /* LoginVC.m in Sources */,
 				E01189F41E00F19700C9E3ED /* main.m in Sources */,
+				E0E44F691E10B5500028763D /* UITableView+SDAutoTableViewCellHeight.m in Sources */,
 				E0ACC03C1E01470B005FD9B2 /* LoginModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +450,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UGN63MY6MM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WCR-MOA/WCRPrefixHeader.pch";
 				INFOPLIST_FILE = "WCR-MOA/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -438,6 +465,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UGN63MY6MM;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WCR-MOA/WCRPrefixHeader.pch";
 				INFOPLIST_FILE = "WCR-MOA/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

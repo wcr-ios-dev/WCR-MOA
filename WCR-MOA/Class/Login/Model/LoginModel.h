@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface LoginModel : NSObject
-
+@property (copy,nonatomic) NSString * company;
+@property (copy,nonatomic) NSString * userName;
+@property (copy,nonatomic) NSString * psd;
 @end
