@@ -10,4 +10,5 @@
 @class LoginModel;
 @interface LoginView : UIView
 @property (strong,nonatomic) LoginModel * model;
+@property (strong,nonatomic) UIButton * LoginBtn;
 @end
