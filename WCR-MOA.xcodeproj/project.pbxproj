@@ -43,6 +43,7 @@
 		E0E6D5801E13A717004CE190 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E6D56E1E13A717004CE190 /* CXMLNode_XPathExtensions.m */; };
 		E0E6D5811E13A717004CE190 /* CXMLUnsupportedNode.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E6D5701E13A717004CE190 /* CXMLUnsupportedNode.m */; };
 		E0E6D5821E13A717004CE190 /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E6D5731E13A717004CE190 /* CTidy.m */; };
+		E0E6D5851E13B983004CE190 /* LoginParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E6D5841E13B983004CE190 /* LoginParser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -119,6 +120,8 @@
 		E0E6D5721E13A717004CE190 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		E0E6D5731E13A717004CE190 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		E0E6D5741E13A717004CE190 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		E0E6D5831E13B983004CE190 /* LoginParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginParser.h; sourceTree = "<group>"; };
+		E0E6D5841E13B983004CE190 /* LoginParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginParser.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +287,8 @@
 		E0ACC0191E012D74005FD9B2 /* PaserXml */ = {
 			isa = PBXGroup;
 			children = (
+				E0E6D5831E13B983004CE190 /* LoginParser.h */,
+				E0E6D5841E13B983004CE190 /* LoginParser.m */,
 			);
 			path = PaserXml;
 			sourceTree = "<group>";
@@ -508,6 +513,7 @@
 				E0E6D57B1E13A717004CE190 /* CXMLElement_CreationExtensions.m in Sources */,
 				E0ACC0311E0139E1005FD9B2 /* BaseNav.m in Sources */,
 				E0E6D5751E13A717004CE190 /* CXMLDocument_CreationExtensions.m in Sources */,
+				E0E6D5851E13B983004CE190 /* LoginParser.m in Sources */,
 				E01189FA1E00F19700C9E3ED /* ViewController.m in Sources */,
 				E08839331E1351E2009198A4 /* CRNetTool.m in Sources */,
 				E0ACC03F1E014722005FD9B2 /* LoginView.m in Sources */,
